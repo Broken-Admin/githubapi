@@ -21,8 +21,8 @@ resp = ""
 print(f"Attempting to resolve: {url}")
 try:
     resp = requests.get(url, headers=headers)
-    print(resp.status_code)
 except Exception as e:
     print(f"Error with request.\n{e}")
 
+print(f"Status code: {resp.status_code}")
 print(resp.json())
