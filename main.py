@@ -25,4 +25,4 @@ try:
 except Exception as e:
     print(f"Error with request.\n{e}")
 
-print(str(base64(resp.json()["content"])).replace("\\n", "\n"))
+print(resp.json())
